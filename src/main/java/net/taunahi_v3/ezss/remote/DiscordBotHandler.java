@@ -68,7 +68,7 @@ public class DiscordBotHandler extends ListenerAdapter {
         if (TaunahiConfig.discordRemoteControlToken.isEmpty()) return;
 
         if (WebsocketHandler.getInstance().isServerAlive()) {
-            LogUtils.sendWarning("Discord Bot is already connected, connecting as a client...");
+            LogUtils.sendWarning("Discord Bot is already connected, connecting as a client..");
             WebsocketHandler.getInstance().setWebsocketState(WebsocketHandler.WebsocketState.CLIENT);
             finishedLoading = true;
             tryConnectThread = null;

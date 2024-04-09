@@ -59,7 +59,7 @@ public class BanwaveFailsafe extends Failsafe {
         if (TaunahiConfig.banwaveAction) {
             // pause
             if (!MacroHandler.getInstance().isCurrentMacroPaused()) {
-                LogUtils.sendFailsafeMessage("[Failsafe] Paused the macro because of banwave", false);
+                LogUtils.sendFailsafeMessage("[Failsafe] Paused the macro because of banwave.", false);
                 MacroHandler.getInstance().pauseMacro();
             } else {
                 if (!BanInfoWS.getInstance().isBanwave()) {

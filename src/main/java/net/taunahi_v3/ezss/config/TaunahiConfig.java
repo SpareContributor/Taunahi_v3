@@ -87,7 +87,7 @@ public class TaunahiConfig extends Config {
 
     @Switch(
             name = "Always hold W while farming", category = GENERAL,
-            description = "Always hold W while farming"
+            description = "Always hold W while farming."
     )
     public static boolean alwaysHoldW = false;
 

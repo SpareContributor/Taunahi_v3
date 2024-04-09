@@ -80,7 +80,7 @@ public class WorldChangeFailsafe extends Failsafe {
 
         String message = StringUtils.stripControlCodes(event.message.getUnformattedText());
         if (message.contains(":")) return;
-        if (message.contains("You were spawned in Limbo.") || message.contains("/limbo") || message.startsWith("A kick occurred in your connection")) {
+        if (message.contains("You were spawned in Limbo.") || message.contains("/limbo") || message.startsWith("A kick occurred in your connection.")) {
             LogUtils.sendWarning("[Failsafe] Got kicked to Limbo!");
             FailsafeManager.getInstance().possibleDetection(this);
         }

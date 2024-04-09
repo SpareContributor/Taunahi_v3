@@ -90,7 +90,7 @@ public class DirtFailsafe extends Failsafe {
             case WAIT_BEFORE_START:
                 MacroHandler.getInstance().pauseMacro();
                 maxReactions = (int) Math.round(3 + Math.random() * 3);
-                LogUtils.sendDebug("[Failsafe] Minimum reactions: " + maxReactions);
+                LogUtils.sendDebug("[Failsafe] Minimum reactions : " + maxReactions);
                 if (BlockUtils.getRelativeBlock(-1, 1, 0).equals(Blocks.dirt))
                     dirtOnLeft = true;
                 else if (BlockUtils.getRelativeBlock(1, 1, 0).equals(Blocks.dirt))

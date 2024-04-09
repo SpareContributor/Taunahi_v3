@@ -73,7 +73,7 @@ public class SShapeMushroomRotateMacro extends AbstractMacro {
                             ).easeOutBack(true)
                     );
                 } else {
-                    LogUtils.sendDebug("No direction found...");
+                    LogUtils.sendDebug("No direction found....");
                     changeState(calculateDirection());
                 }
 

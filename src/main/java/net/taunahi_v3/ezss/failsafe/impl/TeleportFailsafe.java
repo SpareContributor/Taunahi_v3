@@ -85,7 +85,7 @@ public class TeleportFailsafe extends Failsafe {
         Vec3 packetPlayerPos = new Vec3(packet.getX(), packet.getY(), packet.getZ());
 
         if (packet.getY() >= 90 || BlockUtils.bedrockCount() > 2) {
-            LogUtils.sendDebug("[Failsafe] Most likely a bedrock check! Will check in a moment to be sure.");
+            LogUtils.sendDebug("[Failsafe] Most likely a bedrock check! Will check in a moment to be sure..");
             return;
         }
 
