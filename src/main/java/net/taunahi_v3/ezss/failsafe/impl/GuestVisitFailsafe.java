@@ -59,7 +59,7 @@ public class GuestVisitFailsafe extends Failsafe {
         tabListCheckDelay.schedule(5000L);
         if (TaunahiConfig.pauseWhenGuestArrives && wasGuestOnGarden && GameStateHandler.getInstance().isGuestOnGarden()) {
             if (!MacroHandler.getInstance().isCurrentMacroPaused()) {
-                LogUtils.sendFailsafeMessage("[Failsafe] Paused the macro because of guest visit!", false);
+                LogUtils.sendFailsafeMessage("[Failsafe] Paused the macro because of guest visit", false);
                 MacroHandler.getInstance().pauseMacro();
             }
         }

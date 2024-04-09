@@ -69,7 +69,7 @@ public class DirtFailsafe extends Failsafe {
         if (event.update.getBlock() == null) return;
         if (!event.update.getBlock().equals(Blocks.dirt)) return;
 
-        LogUtils.sendWarning("[Failsafe] Someone put a block on your garden! Block pos: " + event.pos);
+        LogUtils.sendWarning("[Failsafe] Someone put a block on your garden! Block pos:" + event.pos);
         dirtBlocks.add(event.pos);
     }
 

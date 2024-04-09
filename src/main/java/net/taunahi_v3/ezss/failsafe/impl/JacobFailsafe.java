@@ -103,7 +103,7 @@ public class JacobFailsafe extends Failsafe {
         if (TaunahiConfig.jacobFailsafeAction) {
             // pause
             if (!MacroHandler.getInstance().isCurrentMacroPaused()) {
-                LogUtils.sendFailsafeMessage("[Failsafe] Paused the macro because of extended Jacob's Content!", false);
+                LogUtils.sendFailsafeMessage("[Failsafe] Paused the macro because of extended Jacob's Content", false);
                 MacroHandler.getInstance().pauseMacro();
             } else {
                 if (!GameStateHandler.getInstance().inJacobContest()) {

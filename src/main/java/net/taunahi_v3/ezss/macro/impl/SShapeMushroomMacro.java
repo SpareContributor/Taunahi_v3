@@ -57,7 +57,7 @@ public class SShapeMushroomMacro extends AbstractMacro {
                 } else if (!GameStateHandler.getInstance().isLeftWalkable()) {
                     changeState(State.LEFT);
                 } else {
-                    LogUtils.sendDebug("No direction found");
+                    LogUtils.sendDebug("No direction found...");
                     changeState(calculateDirection());
                 }
                 break;

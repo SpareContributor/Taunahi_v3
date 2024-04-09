@@ -99,7 +99,7 @@ public class ItemChangeFailsafe extends Failsafe {
                 FailsafeManager.getInstance().scheduleRandomDelay(500, 500);
                 break;
             case LOOK_AROUND:
-                MovRecPlayer.getInstance().playRandomRecording("ITEM_CHANGE_");
+                MovRecPlayer.getInstance().playRandomRecording("ITEM_CHANGE-");
                 itemChangeState = ItemChangeState.SWAP_BACK_ITEM;
                 break;
             case SWAP_BACK_ITEM:

@@ -73,7 +73,7 @@ public class FailsafeManager {
             "hmmm, what was that?", "seriously, bro, really?", "again? are you kidding me?", "give me a break",
             "wtf is this???", "ok damn seriously?", "are you fr? what just happened?", "bro seriously what's wrong with you?",
             "you're kidding me, right?", "cmon this is too much!", "really, again? why??", "are you joking??",
-            "um whats going on?", "ok seriously give me a rest", "what just happened lmao" "lmao finally" "stop please"};
+            "um whats going on?", "ok seriously give me a rest", "what just happened lmao" , "lmao finally" , "stop please"};
     private static final String[] FAILSAFE_CONTINUE_MESSAGES = new String[]{
             "can i keep farming?", "lemme farm ok?", "leave me alone next time ok?", "leave me alone lol", "let me farm",
             "nice one admin", "hello admin???", "hello admin", "bro let me farm", "bro let me farm ok?", "bro let me farm pls",
@@ -89,7 +89,7 @@ public class FailsafeManager {
             "hello can i keep farming?", "let me do my farm routine okay?", "seriously can i farm in peace?", "let me farm in peace please",
             "can i keep farming? pretty please?", "seriously let me farm in peace alright?", "can i continue my farming?",
             "let me farm please and thank you", "let me farm and dont interrupt me please", "let me farm dude seriously",
-            "admin dude let me farm okay?", "dude seriously let me farm in peace", "dude let me farm okay?" "fake you admins"};
+            "admin dude let me farm okay?", "dude seriously let me farm in peace", "dude let me farm okay?" , "fake you admins"};
 
     @Getter
     @Setter

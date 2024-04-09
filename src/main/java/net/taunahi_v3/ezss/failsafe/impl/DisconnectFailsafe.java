@@ -61,7 +61,7 @@ public class DisconnectFailsafe extends Failsafe {
     @Override
     public void duringFailsafeTrigger() {
         if (!AutoReconnect.getInstance().isRunning() && AutoReconnect.getInstance().isToggled()) {
-            System.out.println("[Reconnect] Disconnected from server! Trying to reconnect...");
+            System.out.println("[Reconnect] Disconnected from server! Trying to reconnect..");
             Notifications.INSTANCE.send("Farm Helper", "Disconnected from server! Trying to reconnect...");
             AutoReconnect.getInstance().getReconnectDelay().schedule(5_000);
             AutoReconnect.getInstance().start();

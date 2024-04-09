@@ -96,7 +96,7 @@ public class WorldChangeFailsafe extends Failsafe {
         String message = StringUtils.stripControlCodes(event.message.getUnformattedText());
         if (message.contains(":")) return;
         if (message.contains("DYNAMIC") || message.contains("Something went wrong trying to send ") || message.contains("don't spam") || message.contains("A disconnect occurred ") || message.contains("An exception occurred ") || message.contains("Couldn't warp ") || message.contains("You are sending commands ") || message.contains("Cannot join ") || message.contains("There was a problem ") || message.contains("You cannot join ") || message.contains("You were kicked while ") || message.contains("You are already playing") || message.contains("You cannot join SkyBlock from here!")) {
-            LogUtils.sendWarning("[Failsafe] Can't warp to the garden! Will try again in a moment.");
+            LogUtils.sendWarning("[Failsafe] Can't warp to the garden! Will try again in a moment");
             FailsafeManager.getInstance().scheduleDelay(10000);
         }
     }

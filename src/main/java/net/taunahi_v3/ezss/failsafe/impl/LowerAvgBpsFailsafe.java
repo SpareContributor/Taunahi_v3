@@ -100,7 +100,7 @@ public class LowerAvgBpsFailsafe extends Failsafe {
                         MacroHandler.getInstance().getCurrentMacro().ifPresent(cm -> cm.triggerWarpGarden(true, false));
                         FailsafeManager.getInstance().scheduleRandomDelay(2500, 2000);
                     } else if (GameStateHandler.getInstance().getLocation() == GameStateHandler.Location.LIMBO) {
-                        mc.thePlayer.sendChatMessage("/l");
+                        mc.thePlayer.sendChatMessage("/lobby");
                         FailsafeManager.getInstance().scheduleRandomDelay(2500, 2000);
                     } else {
                         mc.thePlayer.sendChatMessage("/skyblock");
