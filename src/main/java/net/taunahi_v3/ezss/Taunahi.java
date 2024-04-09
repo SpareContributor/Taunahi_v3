@@ -56,7 +56,7 @@ public class Taunahi {
         mc.gameSettings.pauseOnLostFocus = false;
         mc.gameSettings.gammaSetting = 1000;
         isDebug = java.lang.management.ManagementFactory.getRuntimeMXBean().getInputArguments().toString().contains("-agentlib:jdwp");
-        Display.setTitle("Taunahi 〔v" + VERSION + "〕 " + (!isDebug ? "Bing Chilling" : "wazzup dev?") + " ☛ " + Minecraft.getMinecraft().getSession().getUsername());
+        Display.setTitle("Taunahi 〔v" + VERSION + "〕 " + (!isDebug ? "Bing Chilling" : "wazzup dev") + " ☛ " + Minecraft.getMinecraft().getSession().getUsername());
         FailsafeUtils.getInstance();
 
         ScheduledExecutorService executorService = Executors.newScheduledThreadPool(1);
