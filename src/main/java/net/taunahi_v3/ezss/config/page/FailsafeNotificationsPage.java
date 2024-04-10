@@ -13,7 +13,7 @@ public class FailsafeNotificationsPage {
     @Switch(
             name = "Teleportation Check Notifications",
             description = "Whether or not to send a notification when the teleportation check failsafe is triggered.",
-            category = "Failsafe Notifications"
+            category = "Failsafe Notifications."
     )
     public static boolean notifyOnTeleportationFailsafe = true;
 

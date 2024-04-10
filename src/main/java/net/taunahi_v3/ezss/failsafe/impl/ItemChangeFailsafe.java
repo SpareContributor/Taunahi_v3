@@ -118,7 +118,7 @@ public class ItemChangeFailsafe extends Failsafe {
     public void endOfFailsafeTrigger() {
         FailsafeManager.getInstance().stopFailsafes();
         Multithreading.schedule(() -> {
-            LogUtils.sendDebug("[Failsafe] Finished item change failsafe. Farming..");
+            LogUtils.sendDebug("[Failsafe] Finished item change failsafe. Farming.");
             MacroHandler.getInstance().resumeMacro();
         }, 500, TimeUnit.MILLISECONDS);
     }

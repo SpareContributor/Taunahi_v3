@@ -136,7 +136,7 @@ public class SShapeCocoaBeanMacro extends AbstractMacro {
 
     @Override
     public State calculateDirection() {
-        LogUtils.sendDebug("Calculating direction....");
+        LogUtils.sendDebug("Calculating direction...");
         if (GameStateHandler.getInstance().isFrontWalkable() && GameStateHandler.getInstance().isRightWalkable())
             return State.FORWARD;
         if (GameStateHandler.getInstance().isBackWalkable())

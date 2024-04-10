@@ -15,7 +15,7 @@ public class AutoSellNPCItemsPage {
 
     @Text(
             name = "Custom Items",
-            description = "Add custom items to AutoSell here. Use | to split the messages.",
+            description = "Add custom items to AutoSell here. Use | to split the messages",
             placeholder = "Custom items to auto sell. Use | to split the messages.",
             size = 2
     )

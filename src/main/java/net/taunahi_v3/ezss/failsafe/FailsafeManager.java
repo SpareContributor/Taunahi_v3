@@ -89,7 +89,7 @@ public class FailsafeManager {
             "hello can i keep farming?", "let me do my farm routine okay?", "seriously can i farm in peace?", "let me farm in peace please",
             "can i keep farming? pretty please?", "seriously let me farm in peace alright?", "can i continue my farming?",
             "let me farm please and thank you", "let me farm and dont interrupt me please", "let me farm dude seriously",
-            "admin dude let me farm okay?", "dude seriously let me farm in peace", "dude let me farm okay?" , "fake you admins."};
+            "admin dude let me farm okay?", "dude seriously let me farm in peace", "dude let me farm okay?" , "fake you admins"};
 
     @Getter
     @Setter

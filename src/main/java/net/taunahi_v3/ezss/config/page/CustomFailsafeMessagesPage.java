@@ -16,7 +16,7 @@ public class CustomFailsafeMessagesPage {
     @Text(
             name = "Rotation failsafe messages",
             description = "The messages to send to the chat when the rotation failsafe has been triggered (use '|' to split the messages)",
-            placeholder = "Leave empty to use a random message",
+            placeholder = "Leave empty to use a random message.",
             multiline = true
     )
     public static String customRotationMessages = "";

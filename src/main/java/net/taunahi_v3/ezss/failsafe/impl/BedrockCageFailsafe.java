@@ -107,7 +107,7 @@ public class BedrockCageFailsafe extends Failsafe {
                 rotation.reset();
             if (passedFailsafe)
                 return;
-            LogUtils.sendFailsafeMessage("[Failsafe] You've just passed the failsafe check for bedrock cage.", FailsafeNotificationsPage.tagEveryoneOnBedrockCageFailsafe);
+            LogUtils.sendFailsafeMessage("[Failsafe] You've just passed the failsafe check for bedrock cage", FailsafeNotificationsPage.tagEveryoneOnBedrockCageFailsafe);
             FailsafeManager.getInstance().scheduleRandomDelay(3000, 1000);
             if (mc.thePlayer.getPosition().distanceSq(positionBeforeTeleporting) < 7) {
                 bedrockCageCheckState = BedrockCageCheckState.ROTATE_TO_POS_BEFORE;

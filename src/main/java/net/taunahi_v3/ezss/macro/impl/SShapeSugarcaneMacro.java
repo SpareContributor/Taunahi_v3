@@ -97,7 +97,7 @@ public class SShapeSugarcaneMacro extends AbstractMacro {
                 break;
             case DROPPING:
                 if (mc.thePlayer.onGround && Math.abs(getLayerY() - mc.thePlayer.getPosition().getY()) <= 1.5) {
-                    LogUtils.sendDebug("Dropping done, but didn't drop high enough to rotate..");
+                    LogUtils.sendDebug("Dropping done, but didn't drop high enough to rotate.");
                     setLayerY(mc.thePlayer.getPosition().getY());
                     changeState(State.NONE);
                 }

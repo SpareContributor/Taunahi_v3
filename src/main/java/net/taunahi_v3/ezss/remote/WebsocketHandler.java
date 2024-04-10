@@ -69,7 +69,7 @@ public class WebsocketHandler {
             JsonObject data = new JsonObject();
             data.addProperty("name", Minecraft.getMinecraft().getSession().getUsername());
             websocketClient.addHeader("auth", Taunahi.gson.toJson(data));
-            LogUtils.sendDebug("[Remote Control] Connecting to websocket server..");
+            LogUtils.sendDebug("[Remote Control] Connecting to websocket server.");
             return websocketClient.connectBlocking();
         } catch (URISyntaxException | InterruptedException e) {
             websocketClient = null;

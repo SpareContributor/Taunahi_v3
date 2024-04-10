@@ -94,7 +94,7 @@ public class EvacuateFailsafe extends Failsafe {
                 }
                 break;
             case END:
-                LogUtils.sendFailsafeMessage("[Failsafe] Came back from evacuation.");
+                LogUtils.sendFailsafeMessage("[Failsafe] Came back from evacuation");
                 endOfFailsafeTrigger();
                 break;
         }

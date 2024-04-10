@@ -54,7 +54,7 @@ public class SShapeVerticalCropMacro extends AbstractMacro {
                         changeState(State.RIGHT);
                     } else {
                         changeState(State.NONE);
-                        LogUtils.sendDebug("This shouldn't happen, but it did....");
+                        LogUtils.sendDebug("This shouldn't happen, but it did...");
                         LogUtils.sendDebug("Can't go forward or backward!");
                     }
                 }

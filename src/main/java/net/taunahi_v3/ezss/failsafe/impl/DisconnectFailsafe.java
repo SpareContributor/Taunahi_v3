@@ -67,7 +67,7 @@ public class DisconnectFailsafe extends Failsafe {
             AutoReconnect.getInstance().start();
         } else if (!AutoReconnect.getInstance().isRunning() && !AutoReconnect.getInstance().isToggled()) {
             System.out.println("[Reconnect] Disconnected from server! Stopping macro...");
-            Notifications.INSTANCE.send("Farm Helper", "Disconnected from server! Stopping macro..");
+            Notifications.INSTANCE.send("Farm Helper", "Disconnected from server! Stopping macro.");
             MacroHandler.getInstance().disableMacro();
             FailsafeManager.getInstance().stopFailsafes();
         } else if (AutoReconnect.getInstance().isRunning()) {

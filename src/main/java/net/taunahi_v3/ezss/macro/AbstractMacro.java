@@ -89,7 +89,7 @@ public abstract class AbstractMacro {
     public void onTick() {
         if (FailsafeManager.getInstance().triggeredFailsafe.isPresent() || FailsafeManager.getInstance().getChooseEmergencyDelay().isScheduled()) {
             if (!sentWarning) {
-                LogUtils.sendWarning("Failsafe is running! Blocking main onTick event..");
+                LogUtils.sendWarning("Failsafe is running! Blocking main onTick event.");
                 sentWarning = true;
             }
             return;

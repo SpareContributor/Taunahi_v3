@@ -73,7 +73,7 @@ public class GuestVisitFailsafe extends Failsafe {
                 && wasGuestOnGarden
         && MacroHandler.getInstance().isMacroToggled()
         && MacroHandler.getInstance().isCurrentMacroPaused()) {
-            LogUtils.sendFailsafeMessage("[Failsafe] Resuming the macro because guest visit is over", false);
+            LogUtils.sendFailsafeMessage("[Failsafe] Resuming the macro because guest visit is over ", false);
             endOfFailsafeTrigger();
         }
     }

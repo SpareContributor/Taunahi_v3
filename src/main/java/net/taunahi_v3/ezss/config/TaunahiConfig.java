@@ -94,7 +94,7 @@ public class TaunahiConfig extends Config {
     //<editor-fold desc="Rotation">
     @Switch(
             name = "Rotate After Warped", category = GENERAL, subcategory = "Rotation",
-            description = "Rotates the player after re-warping", size = 1
+            description = "Rotates the player after re-warping.", size = 1
     )
     public static boolean rotateAfterWarped = false;
     @Switch(

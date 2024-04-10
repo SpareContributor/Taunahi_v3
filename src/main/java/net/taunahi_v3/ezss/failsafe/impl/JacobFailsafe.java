@@ -118,7 +118,7 @@ public class JacobFailsafe extends Failsafe {
                 MacroHandler.getInstance().pauseMacro();
                 Multithreading.schedule(() -> {
                     try {
-                        mc.getNetHandler().getNetworkManager().closeChannel(new ChatComponentText("Will reconnect after end of Jacob's Contest"));
+                        mc.getNetHandler().getNetworkManager().closeChannel(new ChatComponentText("Will reconnect after end of Jacob's Contest "));
                         AudioManager.getInstance().resetSound();
                     } catch (Exception e) {
                         e.printStackTrace();
