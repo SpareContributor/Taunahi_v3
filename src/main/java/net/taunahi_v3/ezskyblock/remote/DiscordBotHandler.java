@@ -141,7 +141,7 @@ public class DiscordBotHandler extends ListenerAdapter {
         }
 
         if (!Loader.isModLoaded("taunahijdadependency")) {
-            Notifications.INSTANCE.send("Farm Helper", "TaunahiJDA is not loaded, disabling remote control..");
+            Notifications.INSTANCE.send("Taunahi", "TaunahiJDA is not loaded, disabling remote control..");
             LogUtils.sendDebug("TaunahiJDA is not loaded, disabling remote control..");
             TaunahiConfig.enableRemoteControl = false;
             return;

@@ -220,13 +220,13 @@ public class TaunahiConfig extends Config {
     //<editor-fold desc="MISC">
     //<editor-fold desc="Keybinds">
     @KeyBind(
-            name = "Toggle Farm Helper", category = MISCELLANEOUS, subcategory = "Keybinds",
+            name = "Toggle Taunahi", category = MISCELLANEOUS, subcategory = "Keybinds",
             description = "Toggles the macro on/off", size = 2
     )
     public static OneKeyBind toggleMacro = new OneKeyBind(Keyboard.KEY_GRAVE);
     @KeyBind(
             name = "Open GUI", category = MISCELLANEOUS, subcategory = "Keybinds",
-            description = "Opens Farm Helper configuration menu", size = 2
+            description = "Opens Taunahi configuration menu", size = 2
     )
 
     public static OneKeyBind openGuiKeybind = new OneKeyBind(Keyboard.KEY_F);
@@ -1331,7 +1331,7 @@ public class TaunahiConfig extends Config {
     public static int remoteControlPort = 21370;
 
     @Info(
-            text = "If you want to use the remote control feature, you need to put Farm Helper JDA Dependency inside your mods folder.",
+            text = "If you want to use the remote control feature, you need to put Taunahi JDA Dependency inside your mods folder.",
             type = InfoType.ERROR,
             category = DISCORD_INTEGRATION,
             subcategory = "Remote Control",
@@ -1598,7 +1598,7 @@ public class TaunahiConfig extends Config {
     public static boolean shownWelcomeGUI = false;
 
     public TaunahiConfig() {
-        super(new Mod("Farm Helper", ModType.HYPIXEL, "/taunahi/icon-mod/icon.png"), "/taunahi/config.json");
+        super(new Mod("Taunahi v3", ModType.HYPIXEL, "/taunahi/icon-mod/icon.png"), "/taunahi/config.json");
         initialize();
 
         this.addDependency("macroType", "Macro Type", () -> !MacroHandler.getInstance().isMacroToggled());

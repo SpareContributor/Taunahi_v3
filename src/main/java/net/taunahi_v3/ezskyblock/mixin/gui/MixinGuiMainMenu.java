@@ -21,7 +21,7 @@ public class MixinGuiMainMenu {
     @Inject(method = "updateScreen", at = @At("RETURN"))
     private void initGui(CallbackInfo ci) {
         if (Taunahi.isDebug) {
-            this.splashText = "Fix Farm Helper <3";
+            this.splashText = "Fix Taunahi <3";
             return;
         }
         if (!TaunahiConfig.shownWelcomeGUI) {
@@ -35,6 +35,6 @@ public class MixinGuiMainMenu {
             }
         }
         if (AutoUpdaterGUI.isOutdated)
-            this.splashText = "Update Farm Helper <3";
+            this.splashText = "Update Taunahi <3";
     }
 }

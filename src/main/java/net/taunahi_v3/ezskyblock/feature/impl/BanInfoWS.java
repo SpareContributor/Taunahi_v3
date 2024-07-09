@@ -150,7 +150,7 @@ public class BanInfoWS implements IFeature {
 
     private List<BasicHeader> getHttpClientHeaders() {
         List<BasicHeader> headers = new ArrayList<>();
-        headers.add(new BasicHeader("User-Agent", "Farm Helper"));
+        headers.add(new BasicHeader("User-Agent", "Taunahi"));
         headers.add(new BasicHeader("Content-Type", "application/json"));
         headers.add(new BasicHeader("Accept", "application/json"));
         return headers;
